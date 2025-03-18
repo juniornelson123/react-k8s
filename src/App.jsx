@@ -22,7 +22,7 @@ function App() {
           alterando count is {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+        alterando  Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
