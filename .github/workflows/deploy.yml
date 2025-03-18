@@ -15,9 +15,10 @@ jobs:
       # 🔹 Instalar o `doctl` (Digital Ocean CLI)
       - name: Instalar `doctl`
         run: |
-          curl -sL https://github.com/digitalocean/doctl/releases/latest/download/doctl-$(uname -s)-$(uname -m).tar.gz | tar -xzv
-          sudo mv doctl /usr/local/bin
-          doctl version  # Verifica se foi instalado corretamente
+          curl -sL https://github.com/digitalocean/doctl/releases/latest/download/doctl-linux-amd64.tar.gz -o doctl.tar.gz
+          tar -xzf doctl.tar.gz
+          sudo mv doctl /usr/local/bin/
+          doctl version
 
       # 🔹 Autenticar no Digital Ocean
       - name: Login no Digital Ocean
